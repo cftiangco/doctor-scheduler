@@ -2,14 +2,19 @@
     --color-white:#fafafa;
     --color-blue:#2a9df4;
     --color-semiblue:#72bcd4;
+    --color-pink:#fa829d;
+    --color-linkpink:#ffc0cb;
 }
 .sidebar {
-    background:var(--color-semiblue);
+    background:var(--color-pink);
     /* background-image: linear-gradient(to right,var(--color-semiblue)5%,var(--color-blue)95%); */
     width:120px;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 1;
+    position: fixed;
+    margin:0;
+    top:0;
 }
 
 .sidebar ul {

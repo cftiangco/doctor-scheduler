@@ -1,5 +1,4 @@
 .specialty {
-    overflow: scroll;
-    max-height: 590px!important;
-    margin:0!important;
+    max-height: 100vh!important;
+    margin:0 auto!important;
 }

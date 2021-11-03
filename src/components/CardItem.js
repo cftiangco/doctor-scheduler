@@ -1,23 +1,38 @@
 import React from 'react';
 import { FaEdit } from "react-icons/fa";
+import { FaUserMd } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
+import styles from "./CardItem.module.css"
 
-function CardItem(props) {
+function CardItem({ doctor }) {
     return (
         <>
-            <div className="d-block d-lg-flex justify-content-between border-bottom pb-2 p-3">
-                    <div>
-                        <p className="m-0 p-0">Dr. Steven N. Pua</p>
-                        <small className="m-0 p-0 text-muted d-block">Time: 12:00PM - 5:30PM</small>
-                        <small className="m-0 p-0 text-muted d-block">Patients: 6/10</small>
-                    </div>
-                    <div>
-                        <div className="d-flex justify-content-between align-items-center">
-                            <p className="m-0 p-0">Status: Coming</p>
-                            <small className="m-0 p-0 me-3"><FaEdit/></small>
+            <div className={`d-block d-lg-flex justify-content-between border-bottom pb-2  ${styles.cardItem}`}>
+                <div className="container p-1 m-0 px-lg-2">
+                    <div className="row">
+                        <div className="col">
+                            <div>
+                                <p className="m-0 p-0 fw-bold"><FaUserMd /> {doctor.name}</p>
+                                <small className="m-0 p-0 text-muted d-block"><FaClock /> {doctor.time}</small>
+                                <small className="m-0 p-0 text-muted d-block"><FaRegUser /> Patients: 6/10</small>
+                            </div>
                         </div>
-                        <small className="m-0 p-0 text-muted d-block">Notes: late will arrive at 1:30pm</small>
-                        <small className="m-0 p-0 text-muted d-block">Reliever: Dr. Karla A. Antonio</small>
+                        <div className="col">
+                            <div className="text-start">
+                                <p className="m-0 p-0">Status: <span className={styles.status}>{doctor.status}</span></p>
+                                <small className="m-0 p-0 text-muted d-block">Notes: {doctor.notes}</small>
+                                {doctor.reliever ?
+                                    <small className="m-0 p-0 text-muted d-block">Reliever: Dr. {doctor.reliever}</small> :
+                                    ''}
+
+                            </div>
+                        </div>
                     </div>
+                    <div className="d-flex justify-content-end">
+                        <small className="m-0 p-0 me-3" style={{ cursor: 'pointer' }}>Modify <FaEdit /></small>
+                    </div>
+                </div>
             </div>
         </>
     );

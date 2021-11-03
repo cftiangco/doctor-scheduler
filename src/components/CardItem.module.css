@@ -1,0 +1,11 @@
+.cardItem {
+    background-color: #f1f1f1;
+}
+
+.status {
+    background-color: #F0E68C;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 4px;
+}

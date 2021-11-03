@@ -1,12 +1,17 @@
-import React from 'react';
-import styles from './Nav.module.css'
+import React from 'react'
 
-function Nav(props) {
+export default function Nav() {
     return (
-        <div className={`border-bottom ${styles.clinicNav}`}>
-            <h1>MYHC SMNE</h1>
+        <div className="container mt-3">
+            <div className="row">
+                <div className="col">
+                    <div className="mx-4">
+                        <input type="text"
+                            className="form-control"
+                            id="search" placeholder="Search for doctor, specialty" />
+                    </div>
+                </div>
+            </div>
         </div>
-    );
+    )
 }
-
-export default Nav;
