@@ -6,7 +6,7 @@
     --color-linkpink:#ffc0cb;
 }
 .sidebar {
-    background:var(--color-pink);
+    background:var(--color-semiblue);
     /* background-image: linear-gradient(to right,var(--color-semiblue)5%,var(--color-blue)95%); */
     width:120px;
     height: 100vh;

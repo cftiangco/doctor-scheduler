@@ -9,7 +9,7 @@ function Card({ specialty, description, doctors }) {
         <div className={`col-12 col-lg-6 mb-3 ${styles.clinicCard}`}>
             <div className="mx-3 shadow rounded">
                 <h5 className="border-bottom p-2 m-0 fw-bold"
-                    style={{ backgroundColor: '#FA829D', color: '#f4f4f4' }}><FaStethoscope /> {specialty.description}</h5>
+                    style={{ backgroundColor: '#72bcd4', color: '#f4f4f4' }}><FaStethoscope /> {specialty.description}</h5>
                 {specialty.doctors.map((doctor, key) => (
                     <CardItem key={doctor.id} doctor={doctor} />
                 ))}

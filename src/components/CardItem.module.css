@@ -9,3 +9,22 @@
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 4px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .doctorName {
+        font-size:14px;
+    }
+    .doctorTime {
+        font-size:12px;
+    }
+    .doctorStatus {
+        font-size:14px;
+    }
+    .doctorNotes {
+        font-size:12px;
+    }
+    .doctorReliever {
+        font-size:11px;
+    }
+}
