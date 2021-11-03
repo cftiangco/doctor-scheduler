@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import Nav from './components/Nav'
+import SideNavbar from './components/SideNavbar'
+import Specialty from './components/Specialty'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <SideNavbar />
+        <main className={`${styles.mainContainer}`} >
+          <Nav/>
+          <Specialty/>
+        </main>
     </div>
   );
 }
+
 
 export default App;

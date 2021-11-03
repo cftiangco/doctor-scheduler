@@ -1,0 +1,28 @@
+:root {
+    --color-white:#fafafa;
+    --color-blue:#2a9df4;
+    --color-semiblue:#72bcd4;
+}
+.sidebar {
+    background:var(--color-semiblue);
+    /* background-image: linear-gradient(to right,var(--color-semiblue)5%,var(--color-blue)95%); */
+    width:120px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.sidebar ul {
+    margin:0;
+    padding:0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin:15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color:var(--color-white);
+}

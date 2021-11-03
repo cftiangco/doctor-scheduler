@@ -1,0 +1,9 @@
+.mainContainer {
+    margin-left:120px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainContainer {
+        margin-left: 0!important;
+    }
+}
